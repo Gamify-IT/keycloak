@@ -11,6 +11,7 @@ ENV KC_HOSTNAME_STRICT="false"
 ENV KC_HTTP_PORT="80"
 ENV KC_HTTP_RELATIVE_PATH="/keycloak"
 ENV KC_PROXY="edge"
+ENV SKIP_IMPORT=false
 
 RUN /opt/keycloak/bin/kc.sh build
 
