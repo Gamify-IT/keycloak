@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-/opt/keycloak/bin/kc.sh import --file /app/gamify-it/template/keycloak-realm-template.json
+if [[ "$SKIP_IMPORT" != true ]]; then
+    /opt/keycloak/bin/kc.sh import --file /app/gamify-it/template/keycloak-realm-template.json
+fi
 
 exec /opt/keycloak/bin/kc.sh "$@"

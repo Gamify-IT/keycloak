@@ -24,6 +24,8 @@ variables see the [keycloak documentation](https://www.keycloak.org/server/all-c
     - default: `/keycloak`
 - `KC_PROXY`:
     - default: `edge`
+- `SKIP_IMPORT`:
+    - set to `true` to skip the import
 
 
 
