@@ -11,6 +11,9 @@ ENV KC_HOSTNAME_STRICT="false"
 ENV KC_HTTP_PORT="80"
 ENV KC_HTTP_RELATIVE_PATH="/keycloak"
 ENV KC_PROXY="edge"
+# If the following is not set or true, the Gamify-IT realm will be dropped whenever you start the container. Only recommended for development
+ENV KC_OVERRIDE="false"
+
 ENV SKIP_IMPORT=false
 
 RUN /opt/keycloak/bin/kc.sh build
