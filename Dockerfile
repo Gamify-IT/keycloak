@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:21.1
+FROM quay.io/keycloak/keycloak:22.0
 
 WORKDIR /app/gamify-it/template
 COPY keycloak-realm-template.json .
