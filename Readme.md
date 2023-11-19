@@ -24,6 +24,9 @@ variables see the [keycloak documentation](https://www.keycloak.org/server/all-c
     - default: `/keycloak`
 - `KC_PROXY`:
     - default: `edge`
+- `KC_OVERRIDE`:
+    - If the following is not set or true, the Gamify-IT realm will be dropped whenever you start the container. Only recommended for development
+    - default: `false`
 - `SKIP_IMPORT`:
     - set to `true` to skip the import
 
